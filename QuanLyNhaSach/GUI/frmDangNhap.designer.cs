@@ -58,11 +58,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(118, 212);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 45);
+            this.label1.Size = new System.Drawing.Size(266, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "ĐĂNG NHẬP";
             // 
@@ -71,7 +71,7 @@
             this.btnDangNhap.BackColor = System.Drawing.Color.Black;
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
             this.btnDangNhap.Location = new System.Drawing.Point(160, 455);
             this.btnDangNhap.Name = "btnDangNhap";
@@ -111,11 +111,11 @@
             // lblQuenMK
             // 
             this.lblQuenMK.AutoSize = true;
-            this.lblQuenMK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuenMK.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuenMK.ForeColor = System.Drawing.Color.Black;
             this.lblQuenMK.Location = new System.Drawing.Point(267, 412);
             this.lblQuenMK.Name = "lblQuenMK";
-            this.lblQuenMK.Size = new System.Drawing.Size(134, 22);
+            this.lblQuenMK.Size = new System.Drawing.Size(156, 24);
             this.lblQuenMK.TabIndex = 6;
             this.lblQuenMK.Text = "Quên mật khẩu?";
             this.lblQuenMK.Click += new System.EventHandler(this.LblQuenMK_Click);
@@ -153,10 +153,10 @@
             // chkAnHienPass
             // 
             this.chkAnHienPass.AutoSize = true;
-            this.chkAnHienPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAnHienPass.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAnHienPass.Location = new System.Drawing.Point(91, 411);
             this.chkAnHienPass.Name = "chkAnHienPass";
-            this.chkAnHienPass.Size = new System.Drawing.Size(144, 26);
+            this.chkAnHienPass.Size = new System.Drawing.Size(163, 28);
             this.chkAnHienPass.TabIndex = 10;
             this.chkAnHienPass.Text = "Hiện mật khẩu";
             this.chkAnHienPass.UseVisualStyleBackColor = true;

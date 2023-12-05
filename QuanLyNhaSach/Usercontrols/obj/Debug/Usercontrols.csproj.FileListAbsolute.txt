@@ -1,0 +1,6 @@
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\obj\Debug\Usercontrols.csprojAssemblyReference.cache
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\obj\Debug\Usercontrols.csproj.CoreCompileInputs.cache
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\bin\Debug\Usercontrols.dll
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\bin\Debug\Usercontrols.pdb
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\obj\Debug\Usercontrols.dll
+D:\Data\University\Code\C#\PTUDTM\DA_LTCSHARP2_NHOM_10\SOURCE\DoAnPTPMUDTM_Winform\QuanLyNhaSach\Usercontrols\obj\Debug\Usercontrols.pdb
