@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BLL;
 
 namespace GUI
 {
     public partial class frmDangNhap : Form
     {
+        NhanVienBLL nvbll = new NhanVienBLL();
         public frmDangNhap()
         {
             InitializeComponent();
@@ -20,38 +22,35 @@ namespace GUI
 
         private void BtnDangNhap_Click(object sender, EventArgs e)
         {
-            //if(txtUserName.Text == "")
-            //{
-            //    MessageBox.Show("Bạn chưa nhập tên đăng nhập!");
-            //    txtUserName.Focus();
-            //    return;
-            //}
-            //if (txtPassword.Text == "")
-            //{
-            //    MessageBox.Show("Bạn chưa nhập mật khẩu!");
-            //    txtPassword.Focus();
-            //    return;
-            //}
-            //string sql = "select * from NHANVIEN where TENDANGNHAP = '" + txtUserName.Text + "' and MATKHAU = '" + txtPassword.Text + "'";
-            //int kq = dbcon.execute_NonQuery(sql);
-            //DataTable dt = dbcon.getDataTable(sql, "tblNHANVIEN");
-            //if (dt.Rows.Count > 0)
-            //{
-            //    MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    frmHome f = new frmHome(dt.Rows[0][0].ToString(), dt.Rows[0][1].ToString(),
-            //                            dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString(), 
-            //                            dt.Rows[0][4].ToString(), dt.Rows[0][5].ToString(), 
-            //                            dt.Rows[0][6].ToString(), dt.Rows[0][7].ToString(),
-            //                            dt.Rows[0][8].ToString());
-            //    this.Hide();
-            //    f.ShowDialog();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    txtUserName.Focus();
-            //}
+            if (txtUserName.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tên đăng nhập!");
+                txtUserName.Focus();
+                return;
+            }
+            if (txtPassword.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập mật khẩu!");
+                txtPassword.Focus();
+                return;
+            }
+            string tenDangNhap = txtUserName.Text;
+            string matKhau = txtPassword.Text;
 
+            NhanVien nv = nvbll.LayNhanVienDangNhap(tenDangNhap, matKhau);
+            if (nv == null)
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                return;
+            }
+            if (!nv.HoatDong.Value)
+            {
+                MessageBox.Show("Tài khoản đã ngừng hoạt động!");
+                return;
+            }
+            frmHome f = new frmHome(nv.Id, nv.HoTen, nv.TenDangNhap, nv.MatKhau, nv.Email, nv.SDT, nv.DiaChi, nv.HoatDong.Value);
+            this.Hide();
+            f.ShowDialog();
         }
 
         private void FrmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
